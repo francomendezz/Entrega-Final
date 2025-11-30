@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>InfoHard</title>
+</head>
+<body class="productos-page">
+    <header>
+    <div class="logo">
+        <img src="media/img/logo.png" alt="logo de InfoHard" width="150">
+    </div>
+        
+        <nav class="opcion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="index.html#contactos">Contactos</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li class="carrito-nav"><a href="carrito.html">🛒 <span id="cartCount">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+
+            <div class="producto">
+                <h3 class="hardware">Procesadores</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>Intel Pentium Gold G7400</p>
+                        <img src="media/img/procesador/procesador1.jpg" alt="Intel Pentium Gold G7400" width="150">
+                        <span class="precio">$117.203,50</span>
+                        <button onclick="agregarCarrito('Intel Pentium Gold G7400', 117203.50)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>AMD Ryzen 5 5600G</p>
+                        <img src="media/img/procesador/procesador2.jpg" alt="AMD Ryzen 5 5600G" width="150">
+                        <span class="precio">$257.969,95</span>
+                        <button onclick="agregarCarrito('AMD Ryzen 5 5600G', 257969.95)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Intel Core i9-13900K</p>
+                        <img src="media/img/procesador/procesador3.webp" alt="Intel Core i9-13900K" width="150">
+                        <span class="precio">$1.365.826</span>
+                        <button onclick="agregarCarrito('Intel Core i9-13900K', 1365826)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Motherboards</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>ASRock B460M-HDV</p>
+                        <img src="media/img/motherboard/placa1.png" alt="ASRock B460M-HDV" width="150">
+                        <span class="precio">$39.000</span>
+                        <button onclick="agregarCarrito('ASRock B460M.HDV', 39000)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>MSI B550 Tomahawk</p>
+                        <img src="media/img/motherboard/placa2.jpg" alt="MSI B550 Tomahawk" width="150">
+                        <span class="precio">$437.500</span>
+                        <button onclick="agregarCarrito('MSI B550 Tomahawk', 437500)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>ASUS ROG Crosshair X670E</p>
+                        <img src="media/img/motherboard/placa3.jpg" alt="ASUS ROG Crosshair X670E" width="150">
+                        <span class="precio">$1.119.510</span>
+                        <button onclick="agregarCarrito('ASUS ROG Crosshair X670E', 1119510)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Fuentes</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>EVGA 400W 80+</p>
+                        <img src="media/img/fuente/fuente1.webp" alt="EVGA 400W 80+" width="150">
+                        <span class="precio">$56.502,08</span>
+                        <button onclick="agregarCarrito('EVGA 400w 80+', 56502.08)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Corsair CX650M 650W 80+ Bronze</p>
+                        <img src="media/img/fuente/fuente2.png" alt="Corsair CX650M 650W 80+ Bronze" width="150">
+                        <span class="precio">$140.000</span>
+                        <button onclick="agregarCarrito('Corsair CX650M 650W 80+ Bronze', 140000)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Seasonic Focus PX-1000 1000W 80+ Platinum</p>
+                        <img src="media/img/fuente/fuente3.webp" alt="Seasonic Focus PX-1000 1000W 80+ Platinum" width="150">
+                        <span class="precio">$976.600</span>
+                        <button onclick="agregarCarrito('Seasonic Focus PX-1000 1000w 80+ Platinum', 976600)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Memoria RAM</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>Corsair Vengeance LPX 8GB DDR4 2666MHz</p>
+                        <img src="media/img/ram/ram1.jpg" alt="Corsair Vengeance LPX 8GB DDR4 2666MHz" width="150">
+                        <span class="precio">$37.800</span>
+                        <button onclick="agregarCarrito('Corsair Vengeance LPX 8GB DDR4 2666MHz', 37800)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>G.Skill Ripjaws V 16GB DDR4 3200MHz</p>
+                        <img src="media/img/ram/ram2.jpg" alt="G.Skill Ripjaws V 16GB DDR4 3200MHz" width="150">
+                        <span class="precio">$121.150</span>
+                        <button onclick="agregarCarrito('G.Skill Ripjaws V 16GB DDR4 3200MHz', 121150)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Corsair Dominator Platinum RGB 32GB DDR5 6000MHz</p>
+                        <img src="media/img/ram/ram3.jpg" alt="Corsair Dominator Platinum RGB 32GB DDR5 6000MHz" width="150">
+                        <span class="precio">$258.182,22</span>
+                        <button onclick="agregarCarrito('Corsair Dominator Platinum RGB 32GB DDR5 6000MHz', 258182.22)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Almacenamiento</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>Kingston A400 240GB SSD</p>
+                        <img src="media/img/almacenamiento/almacenamiento1.jpg" alt="Kingston A400 240GB SSD" width="150">
+                        <span class="precio">$37.405</span>
+                        <button onclick="agregarCarrito('Kingston A400 240GB SSD', 37405)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>WD Blue SN570 500GB NVMe</p>
+                        <img src="media/img/almacenamiento/almacenamiento2.png" alt="WD Blue SN570 500GB NVMe" width="150">
+                        <span class="precio">$78.329,29</span>
+                        <button onclick="agregarCarrito('WD Blue SN570 500GB NVMe', 78329.29)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Samsung 990 Pro 2TB NVMe</p>
+                        <img src="media/img/almacenamiento/almacenamiento3.webp" alt="Samsung 990 Pro 2TB NVMe" width="150">
+                        <span class="precio">$321.000</span>
+                        <button onclick="agregarCarrito('Samsung 990 Pro 2TB NVMe', 321000)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Tarjeta gráfica</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>NVIDIA GT 1030</p>
+                        <img src="media/img/grafica/grafica1.jpg" alt="NVIDIA GT 1030" width="150">
+                        <span class="precio">$140.000</span>
+                        <button onclick="agregarCarrito('NVIDIA GT 1030', 140000)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>NVIDIA RTX 3060</p>
+                        <img src="media/img/grafica/grafica2.jpg" alt="NVIDIA RTX 3060" width="150">
+                        <span class="precio">$606.150</span>
+                        <button onclick="agregarCarrito('NVIDIA RTX 3060', 606150)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>NVIDIA RTX 4090</p>
+                        <img src="media/img/grafica/grafica3.webp" alt="NVIDIA RTX 4090" width="150">
+                        <span class="precio">$1.800.000</span>
+                        <button onclick="agregarCarrito('NVIDIA RTX 4090', 1800000)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Refrigeración</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>Cooler Master Hyper H412R</p>
+                        <img src="media/img/refrigeracion/cooler1.webp" alt="Cooler Master Hyper H412R" width="150">
+                        <span class="precio">$54.200</span>
+                        <button onclick="agregarCarrito('cooler1 Master Hyper H412R', 54200)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Noctua NH-U12S</p>
+                        <img src="media/img/refrigeracion/cooler2.jpg" alt="Noctua NH-U12S" width="150">
+                        <span class="precio">$177.500</span>
+                        <button onclick="agregarCarrito('Noctua NH-U12S', 177500)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Corsair iCUE H150i Elite Capellix</p>
+                        <img src="media/img/refrigeracion/cooler3.webp" alt="Corsair iCUE H150i Elite Capellix" width="150">
+                        <span class="precio">$217.906,98</span>
+                        <button onclick="agregarCarrito('Corsaira iCUE H150i Elite Capellix', 217906.98)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Gabinete</h3>
+                <div class="items">
+                    <div class="item">
+                        <p>Cooler Master MasterBox Q300L</p>
+                        <img src="media/img/gabinete/gabinete1.webp" alt="Cooler Master MasterBox Q300L" width="150">
+                        <span class="precio">$39.000</span>
+                        <button onclick="agregarCarrito('cooler1 Master MasterBox Q300L', 39000)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>NZXT H510</p>
+                        <img src="media/img/gabinete/gabiente2.webp" alt="NZXT H510" width="150">
+                        <span class="precio">$190.000</span>
+                        <button onclick="agregarCarrito('NZXT H510', 190000)">Comprar</button>
+                    </div>
+                    <div class="item">
+                        <p>Lian Li PC-O11 Dynamic</p>
+                        <img src="media/img/gabinete/gabinete3.jpg" alt="Lian Li PC-O11 Dynamic" width="150">
+                        <span class="precio">$273.000</span>
+                        <button onclick="agregarCarrito('Lian Li PC-O11 Dynamic', 273000)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto">
+                <h3 class="hardware">Periféricos</h3>
+                <div class="items">
+
+                    <div class="item">
+                        <p>Logitech K120</p>
+                        <img src="media/img/teclado/teclado1.png" alt="Logitech K120" width="150">
+                        <span class="precio">$19.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Logitech K120', 19000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Corsair K55 RGB</p>
+                        <img src="media/img/teclado/teclado2.webp" alt="Corsair K55 RGB" width="150">
+                        <span class="precio">$87.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Corsair K55 RGB', 87000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Razer Huntsman V2</p>
+                        <img src="media/img/teclado/teclado3.jpg" alt="Razer Huntsman V2" width="150">
+                        <span class="precio">$331.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Razer Huntsman V2', 331000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>AOC 22B1HS</p>
+                        <img src="media/img/monitor/monitor1.jpg" alt="AOC 22B1HS" width="150">
+                        <span class="precio">$150.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('AOC 22B1HS', 150000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>ASUS VG249Q</p>
+                        <img src="media/img/monitor/monitor 2.png" alt="ASUS VG249Q" width="150">
+                        <span class="precio">$310.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('ASUS VG249Q', 310000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>LG UltraGear 27GP950</p>
+                        <img src="media/img/monitor/monitor3.jpg" alt="LG UltraGear 27GP950" width="150">
+                        <span class="precio">$780.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('LG UltraGear 27GP950', 780000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Logitech M100</p>
+                        <img src="media/img/mouse/mouse1.jpg" alt="Logitech M100" width="150">
+                        <span class="precio">$15.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Logitech M100', 15000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Logitech G502 Hero</p>
+                        <img src="media/img/mouse/mouse2.jpg" alt="Logitech G502 Hero" width="150">
+                        <span class="precio">$35.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Logitech G502 Hero', 35000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Razer DeathAdder V3 Pro</p>
+                        <img src="media/img/mouse/mouse3.jpg" alt="Razer DeathAdder V3 Pro" width="150">
+                        <span class="precio">$110.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Razer DeathAdder V3 Pro', 110000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Logitech H111</p>
+                        <img src="media/img/auricular/auriculares1.jpg" alt="Logitech H111" width="150">
+                        <span class="precio">$12.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Logitech H111', 12000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>HyperX Cloud Stinger</p>
+                        <img src="media/img/auricular/auriculares2.jpg" alt="HyperX Cloud Stinger" width="150">
+                        <span class="precio">$33.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('HyperX cloud Stinger', 33000)">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <p>Razer Kraken X Lite</p>
+                        <img src="media/img/auricular/auriculares3.jpg" alt="Razer Kraken X Lite" width="150">
+                        <span class="precio">$80.000</span>
+                        <button class="btn-comprar" onclick="agregarCarrito('Razer Kraken X Lite', 80000)">Comprar</button>
+                    </div>
+
+                </div>
+            </div>
+
+        
+        </section>
+
+        <footer class="footer">
+        <p>Síguenos en nuestras redes:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="media/img/logoi.png" alt="Instagram" />
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="media/img/logox.jpg" alt="X" />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="media/img/logof.png" alt="Facebook" />
+            </a>
+        </div>
+        <p><strong>© 2025 InfoHard</strong></p>
+        </footer>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

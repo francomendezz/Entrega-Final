@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>InfoHard</title>
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="media/img/logo.png" alt="logo de InfoHard" width="150">
+        </a>
+    </div>
+        
+        <nav class="opcion">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="index.html#contactos">Contactos</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li class="carrito-nav"><a href="carrito.html">🛒 <span id="cartCount">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <form class="login-box" id="loginForm">
+            <label>Usuario</label>
+            <input type="text" id="user" placeholder="Ingresá tu usuario">
+
+            <label>Contraseña</label>
+            <input type="password" id="pass" placeholder="Ingresá tu contraseña">
+
+            <button type="submit" id="loginBtn">Ingresar</button>
+
+            <div id="error"></div>
+        </form>
+    </main>
+ <footer class="footer">
+        <p>Síguenos en nuestras redes:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="media/img/logoi.png" alt="Instagram" />
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="media/img/logox.jpg" alt="X" />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="media/img/logof.png" alt="Facebook" />
+            </a>
+        </div>
+        <p><strong>© 2025 InfoHard</strong></p>
+    </footer>
+<script src="login.js"></script>
+</body>
+</html>
